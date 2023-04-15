@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <script src="style.js" defer></script>
 </head>
 <body>
 
@@ -20,14 +21,57 @@
     </div>
 
     <div class="signupContainer">
-        <div class="headingText">
-            //2x headings, bold font, large
+        <div class="headingText signupSection">
+            <h4>This is not a real online service! You know you need something like this in your life to help you realise your deepest dreams.<br>Sign up <i>now</i> to get started.</h4>
+            <h5>You <i>know</i> you want to.</h5>
         </div>
-        <div class="signupForm">
-            //form, 6x text input fields, required with realistic validation and CSS
+        <div class="signupFormContainer signupSection">
+            <form class="signupForm" id="signupForm">
+                <h6>Let's do this! </h6><p>*required</p>
+                <ul>
+                    <li>
+                        <label for="firstName">FIRST NAME*
+                            <input type="text" name="firstName" id="firstName" required>
+                            <span class = "error firstNameError"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="lastName">LAST NAME*
+                            <input type="text" name="lastName" id="lastName" required>
+                            <span class = "error lastNameError"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="email">EMAIL*
+                            <input type="email" name="email" required>
+                            <span class = "error emailError"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="phoneNumber">PHONE NUMBER*
+                            <input type="tel" name="phoneNumber" pattern="^\d{8,10}$" required>
+                            <span class = "error phoneNumberError"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="password">PASSWORD*
+                            <input type="password" name="password" id="password" required>
+                            <span class = "error passwordError"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="confirmPassword">CONFIRM PASSWORD*
+                            <input type="password" name="confirmPassword" id="confirmPassword" required>
+                            <span class = "error confirmPasswordError"></span>
+                        </label>
+                    </li>
+                </ul>         
+
+            </form>
         </div>
-        <div class="submitSection">
-            //submit "create account" button and already have an account button or link
+        <div class="submitSection signupSection">
+            <button type="submit" id="submitButton">Create Account</button>
+            <h6>Already have an account? <a href="index.html" class="loginLink">Log in</a> </h6>
         </div>
     </div>
 
