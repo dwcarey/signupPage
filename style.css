@@ -225,11 +225,13 @@ input {
 
 span{
     max-width: 23rem;
+    text-align: center;
 }
 p {
     font-size: 0.8rem;
     color:rgb(8, 49, 25);
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
 }
 
 
